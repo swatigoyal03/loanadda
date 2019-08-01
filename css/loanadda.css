@@ -1,0 +1,3702 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:200,400,500,700';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+*{padding: 0; margin: 0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box; }
+
+
+
+html{width:100%; height:100%;}
+body{font-family: 'Raleway', sans-serif; font-size: 13px; font-weight: 400; 
+background:#fff;
+}
+
+/*---------common classes--------------*/
+a{text-decoration:none!important; color:#333333}
+a:hover{text-decoration:none!important}
+h1, h2, h3, h4, h5, h6{margin-top: 0px; margin-bottom: 0px;}
+.pd-20{padding:20px 0px}
+.pd-30{padding:30px 0px}
+.pd-50{padding:50px 0px}
+.pd-80{padding:80px 0px}	
+.mgt-75{margin-top:75px}
+.mgt-45{margin-top:45px}
+.mgt-30{margin-top: 30px;}
+.mgt-25{margin-top: 25px;}
+.mgt-15{margin-top: 15px;}
+.mgb-7{margin-bottom:7px}
+.white{background-color:#FFF}
+.light-blue{background-color:#ebfafc;}
+.lightblshd{background-color:#e3f4ff;}
+.blue{background-color:#008fff;}
+.dark-blue{background-color:#173e7a;}
+.gray{background-color:#f0f0f0;}
+.dark-blue{background-color:#012542;}
+.dash-line{border:1px dashed #CCCCCC;}
+.web-heading-bl h3{color:#173e7a;font-weight:600;font-family: 'Raleway', sans-serif; margin-top: 10px; margin-bottom: 20px;}
+.web-heading-w h3{color:#ffffff;font-weight:600;font-family: 'Raleway', sans-serif; margin-top: 10px; margin-bottom: 20px;}
+.web-heading-bg{padding:5px 15px 5px 20px; color:#173e7a; margin:15px 0;}
+.fa-times{font-weight:lighter;}
+.icon-color{color:#173e7a;}
+.icon-size{font-size:18px!important; vertical-align:middle; margin:0 8px}
+.text-white{color:#ffffff}
+.boder-line{border:1px solid #666;padding:10px 0;}
+
+.about-banner{background:url(../images/Home-Page/about/About%20us%20Slider.png) center;position:relative;}
+.faq-banner{background:url(../images/Home-Page/faq-banner.png) center;position:relative;}
+.disclaimer-banner{background:url(../images/Home-Page/disclaimer-banner.png) center;position:relative;}
+.tc-banner{background:url(../images/Home-Page/tc-banner.png) center;position:relative;}	
+.pp-banner{background:url(../images/Home-Page/pp-banner.png) center;position:relative;}
+.career-banner{background:url(../images/Home-Page/career-banner.png) center;position:relative;}
+.sitemap-banner{background:url(../images/Home-Page/sitemap-banner.png) center no-repeat;position:relative;}
+.loancategory-banner{background:url(../images/Home-Page/loan-category.jpg) center;position:relative;}
+.credit-card-banner{background:url(../images/Home-Page/creditcard.jpg) center;position:relative;}
+.blance-transfer-banner{background:url(../images/Home-Page/blance-transfer.jpg) center;position:relative;}
+.credit-score-banner{background:url(../images/Home-Page/credit-score/banner.jpg)no-repeat;position:relative;}
+
+.loan-banner{background:url(../images/Home-Page/lp-loan/BG%201.png) center;	background-size:cover;}
+.hl-banner{background:url(../images/Home-Page/HL-%20Banner.png) center;	background-size:cover;}
+.pl-banner{background:url(../images/Home-Page/PL-%20banner.png) center;	background-size:cover;}
+.bl-banner{background:url(../images/Home-Page/BL-%20Banner.png) center;	background-size:cover;}
+.badge{font-size:9px!important;
+	background-color:transparent!important}
+.badge-danger{background-color:#de5050!important;}
+
+.step1{color:#bb4106!important;}
+.step2{color:#d95006!important;}
+.step3{color:#df7604!important;}
+
+.orange{ background-color:#ED8C2B}
+.blue-pie{ background-color:#018ab6}
+
+.round-border{border-radius:20px}
+.list-style h4{color:#173e7a}
+.list-style li, p{
+	line-height:24px;
+	font-size:15px;
+	margin-left: 15px;
+	}
+.list-style li a{
+	color:#333333
+	}
+.list-style li .fa-check-square-o{color:#173e7a}		
+	
+.breadcrubs{text-align:center;padding: 100px 0;
+    height: 250px;font-family:'Raleway', sans-serif;}
+	
+.breadcrubs h2{color:#ffffff;display:inline-block;}
+	
+.breadcrubs h2::after{content:"";height: 2px;background: #00d6c3;display:block;}
+
+.web-subheading {
+	color: #173e7a;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	display:inline-block;
+	}
+	
+.web-subheading::after{
+	content:"";
+	height: 3px;
+    background-image: linear-gradient(to right, #006ab4 , #00d6c3);
+	margin:5px 0 6px;
+	transition:all .3s linear;
+	display:block;
+	}
+.web-subheading h4{
+	color: #173e7a;
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+	display:inline-block;
+	margin-bottom:0;
+	}	
+
+.carousel-control .fa-chevron-left, .carousel-control .fa-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{    
+	position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;}
+	
+.carousel-control .fa-chevron-left, .carousel-control .icon-prev {
+	left: 23%!important;
+	margin-left: -10px;
+}
+
+.carousel-control .fa-chevron-right, .carousel-control .icon-next {
+	right: 23%!important;
+	margin-right: -10px;
+}		
+.sty-size{color:#333333;font-size:12px}
+.text-slide h4{font-size:20px}
+.text-slide p{font-size:17px}
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 0em;
+  color:#ffffff;
+  width: 50%;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { right: -100%; opacity: 0; }
+  8.3%,25% { right: 25%; opacity: 1; }
+  33.33%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { right: -100%; opacity: 0; }
+  41.63%, 58.29% { right: 25%; opacity: 1; }
+  66.66%, 100% { right: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { right: -100%; opacity: 0; }
+  74.96%, 91.62% { right: 25%; opacity: 1; }
+  100% { right: 110%; opacity: 0; }
+}
+
+.hiddenRow {
+    display:none;
+	background-color:#ffffff
+}
+
+
+.feeback-popup{
+	top:10%!important;padding:0px 5px}
+.otp-content{
+	background-color:#ffffff!important;
+	position:absolute;
+	text-align:center}
+	
+.otp-input{
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	text-align:center}	
+
+/*---------header classes--------------*/	
+
+.ui-jqchart {
+    position: relative;
+}
+
+.ui-jqchart-tooltip {
+    position:absolute;
+    white-space: nowrap;
+
+    padding: .2em .4em;
+    z-index:9999;
+
+    border: 1px solid #dddddd;
+    color: #333333;
+    background: #eeeeee;    
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px; 
+    border-radius: 4px; 
+
+    -o-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+
+* html .ui-jqchart-tooltip {
+	background-image: none;
+}
+body .ui-jqchart-tooltip { border-width:2px; }
+
+/*---------header classes--------------*/	
+	
+header{
+	background:#ffffff;
+	position:fixed;
+	transition:all .5s;
+	z-index:22;
+	width:100%;
+	box-shadow: 0px 2px 9px -3px #333333;}
+	
+.logo{float:left}
+		
+.menu-nav{
+	float:right;
+	font-family: 'Raleway', sans-serif;
+	padding: 6px 0px;
+
+	}
+.menu-nav ul{
+	margin-bottom:0px !important}
+	
+.menu-nav ul li{
+	display:inline-block;
+	list-style:none;
+	color:#4b4b4b;
+	margin-bottom:0px !important}	
+	
+.menu-nav li a{
+	color:#4b4b4b;
+	font-size:14px;
+	font-weight:600;
+	padding:0 15px ;
+	text-decoration:none;
+	display:inline-block}
+	
+.menu-nav li a:hover{color:#173e7a;}	
+	
+.menu-nav li a::after{
+	content:"";
+	display:block;
+	height:2px;
+	width:0;
+	background:#173e7a;
+	transition:width .3s}
+	
+.menu-nav li a:hover::after{
+	width:100%;
+	transition:width .3s;}				
+	
+.download-app{
+	background: #173e7a;
+    text-align: center;
+    padding: 8px 0px;
+    font-weight: 600;
+    border-radius: 5px;
+	}
+		
+.download-app img{
+	position:relative;
+	padding-right:5px
+	}		
+
+a .download-app {
+	position:relative;
+	color:#ffffff;
+	}
+.login{
+    text-align: center;
+    padding: 8px 10px;
+    font-weight: 600;
+    border-radius: 5px;
+	border:1px solid #173e7a;
+	transition:.3s all ease-out;
+	clear:both;
+	}
+
+a.login {	
+	color:#173e7a;
+	background:#173e7a;
+	}
+	
+.login:hover{
+    color:#ffffff;
+	background:#173e7a;
+	}			
+
+	
+
+/* Side top menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #03000e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 23px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #bdbcbc;
+  display: block;
+  transition: 0.3s;
+  border-bottom:1px solid #6b6b6b82;
+  background-color:transparent
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color:#6b6b6b82;
+}
+
+.sidenav a>i{
+	margin-right:10px}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.sidenav a.closebtn{
+	border-bottom:none!important;
+	background-color:transparent}
+
+.sidebar a.closebtn:hover{
+	background-color:transparent!important;
+	}	
+
+.top-menu-bar{
+		float: right;
+		margin-right: 15px;
+		margin-top: 2px;
+		cursor: pointer
+	}
+.bar1, .bar2, .bar3{
+		width: 32px;
+		height: 4px;
+		background: #676666;
+		transition: .4s;
+		margin: 4px 0px;
+		
+	}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+
+<style>
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+
+.slick-slide {
+    margin: 0px 0px;
+}
+
+.slick-slide img {
+    
+}
+
+.slick-slider a
+{
+    position: relative;
+    display: block;
+	text-decoration:none;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-slider a:focus{
+	outline:none}
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider a .slick-track,
+.slick-slider a.slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide a
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+/*---------slider classes--------------*/
+
+.slider{
+	z-index:-1;
+	}
+	
+.slider-caption{
+	position: absolute;
+	float:right;
+    left: 58%;
+    top: 26%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}
+
+.slider-caption span {
+    color: #00daff;
+}
+	
+.slider h2{
+	font-size:36px;
+	line-height:45px}
+.slider p{
+	font-size:18px;}		
+
+
+/*---------loan services classes--------------*/
+
+.loan-service{
+	background:#ffffff;
+	text-align:center;
+	}
+
+.home-loan-service{
+	padding:10px;
+	text-align:center;
+	background-color:#ffffff;
+	color:#173e7a;
+	margin:-97px -15px;
+	font-size:16px;
+	border-right:1px solid #666;
+	transition:all .3s linear;
+	}
+.home-loan-service img{margin-bottom:5px}	
+		
+.hl-service1{
+	border-top-left-radius:80px;
+	border-top-right-radius:0px;
+	clear:both
+}
+
+.hl-service2{	
+	border-top-right-radius:80px;
+	border-top-left-radius:0px;
+	border-right:none;
+	clear:both}		
+	
+.home-loan-service:hover, .home-loan-service.active, .home-loan-service:focus{
+	background-color:#173e7a;
+	color:#ffffff;
+	text-decoration:none;
+	}
+	
+	
+/*---------about loanadda classes--------------*/	
+	
+.about-loanadda{
+	text-align:center;
+	}
+	
+.loanadda-facility{
+	width:89%;
+    padding: 29px 29px;
+	margin:35px auto 0;
+	background-color:#ffffff;
+	transition:all .3s linear;
+	}
+		
+.loanadda-facility h4{
+	color:#173e7a;
+	line-height:30px;
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:600}	
+	
+.loan-process img{
+    margin-bottom: -10px;}	
+
+.loanadda-facility span{
+	color:#006ab4;
+	font-size:16px;
+	font-weight:600;
+	margin-bottom:0;
+	margin-top:10px;
+	}
+.loan-process{
+	margin-bottom:20px}
+.processimg{
+	margin-left: 78px;}
+	
+.process-line{
+	border-bottom: 2px dashed #006ab4;
+	z-index: 10;
+	width: 99%;
+	position: absolute;
+	}
+	
+.process-line-last{
+	border-bottom: 2px dashed #006ab4;
+	z-index: 10;
+	width: 64%;
+	position: absolute;
+	}	
+	
+.last-line{
+    border-bottom: 2px dashed #006ab4;
+	z-index: 10;
+	width: 98%;
+	position: absolute;
+	width: 48%;
+	}					
+.quick-apply{
+	margin:0 auto;
+	clear:both}	
+	
+.loanadda-app-btnb1 {
+	border: 2px solid #173e7a;
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: #173e7a;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 20px;
+	transition: .5s ease-in-out;
+	/* margin-top: 10px; */
+	clear: both;
+	display:inline-block;
+	margin-bottom:15px
+}
+
+.loanadda-app-btnb1:hover {
+	border: 2px solid #173e7a;
+	background-color: #ffffff;
+	color: #173e7a;
+}	
+	
+.home-popup{
+	background-color:#173e7a!important;
+	position:absolute!important}
+
+	
+.popup-left{float:left;margin-left: 0px;}	
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid transparent!important;
+}
+.popup-right{
+	float:right;width: 61%;    margin-top: 56px;}
+.modal-title{font-family: 'Raleway', sans-serif; font-weight:bolder; color:#008fff}
+h2.modal-title span{color:#ffffff}
+
+.popup-content {
+    position: relative;
+    padding: 0px 15px 0 0!important;
+}
+.modal-body {
+    position: relative;
+    padding: 0px!important; }
+.form-control{margin-top:0px!important;}
+#remember{
+    float: left;
+    margin-top: 0px;
+	color:#ffffff
+}
+.popup-form{    padding: 10px 20px;
+    margin-top: 20px;}
+
+.close {
+    float: right;
+    font-size: 32px!important;
+    font-weight: 500!important;
+    line-height: 1;
+    color: #ffffff!important;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1!important;
+}
+
+.feedback-content{
+	display:flex}
+
+.form-icon{width:30px;height:30px}	
+	
+.input-group-addon {
+    /* padding: 6px 14px; */
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 1; */
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0px!important;
+}	
+	
+.input-group-addon:first-child {
+    /* width: 20px; */
+    /* height: 20px; */
+    border-right: 0;
+    background-color: #008fff;
+    border: 1px solid #008fff;
+    color: #ffffff;
+    font-size: 18px;
+}	
+.apply-btn{display: inline-block;}
+.apply-now{
+    background-color: #008fff;
+	border-radius:0!important;
+	color:#ffffff!important;
+    box-shadow: 0px 3px 8px #666;
+	}
+	
+/*---------loan services classes--------------*/
+
+.loanadda-ration{
+	text-align:center;
+	background-color:#ffffff;
+	background-attachment:fixed;
+	background-size:cover;
+	color:#173e7a;
+	transition:all .3s linear;
+	}
+.loanadda-ration h4{
+	font-family: 'Raleway', sans-serif;
+	font-size:24px;
+	font-weight:600;
+	line-height:30px;
+	padding-top:0px	;
+	margin-bottom: 2px;
+}
+.loanadda-ration p{
+	font-size:16px;
+}
+
+
+/*---------loanadda application classes--------------*/
+.loanadda-moile-app{
+	background:url(../images/Home-Page/Download%20BG.png)center;
+	background-size:cover;
+	height:auto;
+	
+	}
+.loanadda-app{
+	font-family: 'Raleway', sans-serif;
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	}
+
+.app-facility{
+	background-color:#ffffff;
+	border-radius:50%;
+	width:150px;
+	height:150px;
+	margin: 20px 50px;
+	position:relative;	
+	transition:all .7s;
+	perspective:1000;
+	color:#173e7a;
+	 }
+	
+.app-facility:hover{
+	background-color:#173e7a;
+	color:#ffffff;
+	transform:rotate3d(90, 90, 0, 180deg)	
+	 }	
+.app-facility:before{
+	position:absolute;
+	border:2px dashed #ffffff;
+	border-radius:inherit;
+	content:'';
+	height: calc(100% + 20px);
+    width: calc(100% + 20px);
+    margin: 20px 15px;
+    top: -30px;
+    left: -25px;
+	  }	
+.app-facility h4{
+	color: #173e7a;
+    font-weight: 600;
+    font-size: 18px;
+    margin: auto;
+    position: absolute;
+    display: table;
+    top: 0;
+    bottom: 0;
+	padding:47px 15px;;
+	transition:all .1s;
+	}
+.app-facility h4:hover{
+	color:#ffffff;
+	transform:rotate3d(90, 90, 0, 180deg)}	
+		
+.loanadda-app-btnb{
+	border:2px solid #173e7a;
+	padding:10px 20px;
+	border-radius:5px;
+	background-color:#173e7a;
+	color:#ffffff;
+	font-weight:600;
+	font-size:20px;
+	transition:.5s ease-in;
+	margin-top:10px;
+	clear:both
+	}
+	
+.loanadda-app-btnb:hover{
+	border:2px solid #ffffff;
+	background-color:transparent;
+	color:#ffffff;	
+	}
+	
+.loanadda-app-btnw{
+	border:2px solid #ffffff;
+	padding:10px 20px;
+	border-radius:5px;
+	background-color:transprent;
+	color:#ffffff;
+	font-weight:600;
+	font-size:20px;
+	transition:.5s ease-out;
+	margin-top:10px;
+	}
+	
+.loanadda-app-btnw:hover{
+	border:2px solid #173e7a;
+	background-color:#173e7a;
+	color:#ffffff;	
+	}		
+	
+	
+/*---------loanadda contact classes--------------*/
+
+.loanadda-hcont-detail{
+	transition:all .3s linear;
+	}
+	
+.loanadda-map{
+	overflow: hidden;
+    margin-top: 18px;}
+
+.contact-info{
+	text-align:center;
+	}
+	
+.contact-info img{	
+	padding-bottom:10px;
+}	
+	
+.contact-detail{
+	text-align:center;	
+    color: #333333;
+	margin-bottom:20px
+	}
+	
+	
+.contact-detail a{
+	color:#333333	
+	}			
+	
+.form-control{
+	border-radius: 0!important;
+    margin: 10px 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075!important);
+	}
+	
+.form-submit{
+	background-color:#173e7a;
+	padding:10px 30px;
+	color:#ffffff;
+	border:none;
+	font-size:18px
+	}	
+
+
+/*---------loansdda newsletter classes--------------*/
+	
+.loanadda-newsletter{
+	padding: 14px 20px;
+    background: #173e7a;
+	float:left;
+    color: #ffffff;
+    border: none;
+    width: 65%;
+	}
+.loanadda-newsletter::placeholder{
+	color:#ffffff}
+	
+.newsletter-submit{
+	padding:10px 16px;
+    background: #ffffff;
+    color: #173e7a!important;
+    border: none;
+    width: 25%;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+	box-shadow: 0 3px 14px -4px #000000;
+	margin-left: -30px;
+	font-size:19px;
+	}
+.appdownload{float:right}	
+
+.news-report img{filter:grayscale(100%);-webkit-filter:grayscale(100%);transition:all .6s}
+.news-report img:hover{filter:grayscale(0%);-webkit-filter:grayscale(0%);}
+
+
+/*---------loanadda footer classes--------------*/	
+	
+.loanadda-footer h4{
+	font-size:16px
+	}	
+.loanadda-footer, h4 a, li a{
+	color:#ffffff;
+	text-decoration:none
+	}	
+
+.loanadda-footer li{
+	list-style:none;
+	}
+	
+.loanadda-footer li a{
+	color:#CCCCCC;
+	text-decoration:none;
+	font-size:12px
+	}
+	
+.loanadda-footer h4 a:hover{
+	color:#ffffff;
+		}				
+.loanadda-footer li a:hover{
+	color:#ffffff;
+		}			
+
+.footer-mid{
+	padding:15px 0px 0px}
+
+.footer-menu li{
+	display:inline-block;
+	margin-top:20px
+	}
+	
+.footer-menu li:after{
+	content:"|";
+	padding: 0 5px;}
+								
+.footer-menu li:last-child:after{
+	content:"";
+	}	
+	
+.social-media li {
+	display:inline-block;
+		}	
+	
+ i.fa.fa-facebook, i.fa.fa-twitter, i.fa.fa-instagram, i.fa.fa-linkedin, i.fa.fa-google-plus, i.fa.fa-pinterest{
+ border-radius: 100%;
+ background-color:#ffffff;
+ font-size: 22px;
+ height: 38px;
+ line-height: 35px;
+ margin: 5px 3px;
+ text-align: center;
+ width: 38px;
+ transition:.3s all ease-in-out;
+ }
+ i.fa.fa-facebook{
+ border: 2px solid #3B5998;
+ color: #3B5998;
+ }
+ i.fa.fa-twitter{
+ border: 2px solid #55acee;
+ color: #00aced;
+ }
+ i.fa.fa-instagram{
+ border: 2px solid #833ab4;
+ color: #833ab4;
+ }
+ i.fa.fa-linkedin{
+ border: 2px solid #007ab9;
+ color: #007ab9;
+ }
+ i.fa.fa-google-plus{
+ border: 2px solid #dc4e41;
+ color: #dc4e41;
+ }
+ i.fa.fa-pinterest{
+ border: 2px solid #cb2027;
+ color: #cb2027;
+ }
+ 
+  i.fa.fa-facebook:hover{
+ border: 2px solid #3B5998;
+ background-color:#3B5998;
+ color: #ffffff;
+ }
+ i.fa.fa-twitter:hover{
+ border: 2px solid #55acee;
+ background-color:#55acee;
+ color: #ffffff;
+ }
+ i.fa.fa-instagram:hover{
+ border: 2px solid #833ab4;
+ background-color:#833ab4;
+ color: #ffffff;
+ }
+ i.fa.fa-linkedin:hover{
+ border: 2px solid #007ab9;
+ background-color:#007ab9;
+ color: #ffffff;
+ }
+ i.fa.fa-google-plus:hover{
+ border: 2px solid #dc4e41;
+ background-color:#dc4e41;
+ color: #ffffff;
+ }
+ i.fa.fa-pinterest:hover{
+ border: 2px solid #cb2027;
+ background-color:#cb2027;
+ color: #ffffff;
+ }
+
+.footer-bottom{
+	text-align:center;
+	color:#CCCCCC;
+	padding-top:10px
+	}	
+
+	
+
+/*---------loansdda About classes--------------*/	
+		
+.about-ceo h4{
+	color:#006ab4;
+	text-align:center;
+	line-height:20px
+	}
+.about-ceo h4>span{
+	color:#666;
+	font-size:14px
+	}		
+	
+.about-lp-loanadda{
+	background:url(../images/Home-Page/about/Our%20Mission%20Banner.png) no-repeat center;
+	background-size:cover;
+	background-attachment:fixed;
+	text-align:center;
+	}	
+.about-lp-loanadda h3{
+	color:#ffffff;
+	text-align:center
+	}				
+.loanadda-about{
+	width: 100%;
+    padding: 30px 20px;
+	margin:35px auto 15px;
+	background-color:#ffffff;	
+	transition:all .3s linear;
+	box-shadow: 0 3px 8px -4px #000000;
+	}
+
+.loanadda-about:hover, .loanadda-about.active{
+	background-color:#001a41;	
+	color:#ffffff
+	}	
+	
+.loanadda-about img{ margin-right:10px}
+
+.loanadda-about p{margin-top:15px}
+
+.ceo-snapshort{
+	text-align:center;}
+
+
+/*---------loanadda Download App classes--------------*/	
+
+.downloadapp-banner{
+	background:url(../images/Home-Page/download-app/BG.png) center;
+	background-size:cover;
+	text-align:center;
+	padding: 50px 0 130px;}
+	
+.loanadda-dapp{
+	text-align:center;
+    padding: 40px 30px;
+	margin:35px auto 15px;
+	background-color:#ffffff;	
+  	border-image-slice: 1;
+	transition:all .3s linear;
+	box-shadow: 0 4px 8px -4px #000000;
+	}	
+	
+.loanadda-dapp img{
+	padding-bottom:10px
+	}
+	
+.dapp-banner-text{
+	text-align:center;
+	position:relative;
+	}
+		
+.app-banner-text h1, h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight:400}
+
+.dapp-banner-text span{
+	padding: 0 7px}
+
+.app-banner-text{
+	letter-spacing:2px;
+	}
+
+.app-banner-text h1{
+	color:#ffffff;
+	font-size:39px;
+	padding-left:0px;
+	font-weight:600}
+	
+.app-banner-text h3{			
+	color:#ffffff;
+	font-size:8;
+	margin-left: 35px;
+	margin-top:0;	
+}
+.dapp-btn{
+	font-size: 16px;
+	background: #001f43;
+	color: #ffffff;
+	padding: 8px 28px;
+	margin: 10px 0 0 30px;
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-block;}
+	
+.dapp-btn a{
+	color:#ffffff;
+	}
+.dapp-btn a:hover{
+	color:#ffffff;
+	}	
+.dapp-btn img{
+	padding-right:10px
+	}
+
+.banner-girl{
+	text-align:center;
+	margin: 30px 0px 0 22%;}
+	   
+
+
+/*---------loanadda EMI Calculator classes--------------*/	
+	
+.loanadda-calculator{
+	background:#173e7a url(../images/Home-Page/Image/shape.png) no-repeat right  50%;
+	color:#ffffff;
+	background-size: contain;
+	height: max-content;
+	}			
+
+		
+.emi-calculator{
+	padding:10px;
+	margin:30px 0 auto;
+	background-color:#ffffff;
+	color:#173e7a;
+	text-decoration:none;
+	font-size:16px;
+	text-align:center;
+	border-radius:2px;
+	transition:all .3s linear;
+	z-index:10;
+	}
+
+.emi-calculator.is-active{
+	background-color:#00daff;
+	color:#173e7a;
+	text-decoration:none;
+	}
+			
+.emi-calculator:hover, .emi-calculator.active, .emi-calculator:focus{
+	background-color:#00daff;
+	color:#173e7a;
+	text-decoration:none;
+	}
+
+.emi-calculator img{margin-right:7px}	
+	
+.amount-ration{margin:25px 0 94px;}	
+.set-amount{
+	width: 50%!important;
+    float: left;
+    display: inline-block;}	
+	
+.amount{
+	float:right;
+    font-size: 21px;}	
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 5px solid #ffffff!important;
+    background: #008fff!important;
+    font-weight: normal;
+    color: #454545!important;
+    border-radius: 50%;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -11px!important;
+    margin-left: -.6em;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 2.2em!important;
+    height: 2.2em!important;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+.initial-ration{margin-top:20px}
+.set-left{float:left}
+.set-right{float:right}
+
+/*--------pie chart--------*/
+
+.color-label{font-size:16px; line-height:30px;float:right; margin-top:20%!important; clear:both}
+.fa-square{ border-radius:none!important;}
+.orange{ color:#ED8C2B;border: 2px solid #ffffff;background-color:#ED8C2B}
+.blue-pie{ color:#018ab6;border: 2px solid #ffffff;background-color:#018ab6}
+ .pie-apply-btn{
+    text-align: center;
+    /* top: 95%; */
+    margin-top: 30%;}    
+.chart {
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    top: 5%;
+    left: 55%;
+    margin: 0px 0 0 -225px;
+    float: left;
+}
+.pieTip {
+  position: absolute;
+  float: left;
+  min-width: 30px;
+  max-width: 300px;
+  padding: 5px 18px 6px;
+  border-radius: 2px;
+  background: rgba(255,255,255,.97);
+  color: #444;
+  font-size: 19px;
+  text-shadow: 0 1px 0 #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: .06em;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2), 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transform: all .3s;
+     -moz-transform: all .3s;
+      -ms-transform: all .3s;
+       -o-transform: all .3s;
+          transform: all .3s;
+  pointer-events: none;
+}
+.pieTip:after {
+      position: absolute;
+      left: 50%;
+      bottom: -6px;
+      content: "";
+      height: 0;
+      margin: 0 0 0 -6px;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-top: 6px solid rgba(255,255,255,.95);
+      line-height: 0;
+}
+.chart path { cursor: pointer; }
+
+.half-part{
+	color: #ffffff;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    padding: 20px 0;
+    text-align: center;
+	overflow:hidden}
+.half-part h4{font-size:23px;font-weight:600;margin-bottom: 0;}
+
+
+.emi-table{overflow-x:auto}
+
+.emi-table table{
+	text-align:center; 
+	width:100%;
+	white-space:nowrap;
+	overflow-x:auto
+	}
+	
+.emi-table table>thead>tr>th{
+	text-align:center;
+	padding:20px 15px;
+	color:#ffffff}
+	
+.emi-table table>tbody>tr>td{
+	padding:15px;
+	vertical-align:inherit}
+
+
+/*---------loanadda LAP LP classes--------------*/	
+
+	
+.loan-banner-heading{	
+    position: absolute;
+    color: #ffffff;
+    margin-top: 10%;
+	}
+	
+.loan-banner-heading h2{font-size:36px}
+.loan-banner-heading h1{font-size:40px; font-weight:600}		
+.loan-banner-heading li{
+	line-height: 26px;
+    list-style: none;
+    font-size: 16px;}
+.loan-banner-heading li .fa-check{
+	margin-right:8px}		
+	
+	
+.form-horizontal .control-label {
+	padding-top: 17px!important;
+	margin-bottom: 0;
+	text-align: right;
+}
+
+.loanadda-loan-form{
+	background: #ffffff;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0px 31px 1px #333;
+	}
+	
+.loan-form-heading{
+	padding:10px 0px 0 0;}
+
+.loan-form-heading h3{
+	color:#008fff;
+    font-weight: 600;
+	font-size:29px;
+	font-family: 'Raleway', sans-serif;
+	}
+	
+.loan-form{
+	width:93%;
+	margin: 0 auto;}
+	
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 48px;
+    height: 32px;
+    width: 74%;
+    background-color: #eee;
+    border-radius: 0;
+}
+
+.checkedbtn{
+	background-color:#999;
+	position: absolute;
+    top: 0;
+    left: 48px;
+    height: 32px;
+    width: 74%;
+    border-radius: 0;}
+	
+.checkmark-cre {
+    position: absolute;
+    top: 0;
+    left: 48px;
+    height: 32px;
+    width: 82%;
+    background-color: #eee;
+    border-radius: 0;
+}
+
+.checkedbtn-cre{
+	background-color:#999;
+	position: absolute;
+    top: 0;
+    left: 48px;
+    height: 32px;
+    width: 82%;
+    border-radius: 0;}	
+	
+.radiobt {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 14px;
+    width: 100%!important;
+    margin: 0 1%;
+    color: #333!important;
+    /* float: left!important; */
+}
+.radiobt strong {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 9;
+    left: 0px;
+    top: 8px;
+}	
+.checkread{color:#333333!important	}	
+
+.stv-radio-tabs-wrapper {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #428bca;
+  padding: 0 10px;
+  position: relative;
+}
+input.stv-radio-tab {
+  position: absolute;
+  left: -99999em;
+  top: -99999em;
+
+	& + label {
+		cursor: pointer;
+		float: left;
+		border: 1px solid #aaa;
+		border-bottom: 0;
+		background-color: #fff;
+		margin-right: -1px;
+		padding: .5em 1em;
+		position: relative;
+        
+     &:hover {
+       background-color: #eee;
+     }
+	}
+
+	&:checked + label {
+		box-shadow: 0 3px 0 -1px #fff,
+       inset 0 5px 0 -1px #13CD4A;
+		background-color: #fff;
+     border-color: #428bca;
+		z-index: 1;
+	}
+}
+
+
+.loan-boder{
+	background-image:url(../images/Home-Page/lp-loan/line.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	height:auto;
+	max-height:100%;}	
+	
+.loan-lp-overview li{
+	list-style:none;
+	padding: 7px 35px 0 0;
+	line-height:20px;
+	word-spacing:1px
+	}
+.loan-lp-overview li:last-child{
+	display:none
+	}
+	
+.loan-lp-overview li .fa-check-square{
+	color: #337ab7;
+    font-size: 18px;
+    margin-right: 5px;}
+	
+.loan-lp-overview p{
+	line-height: 24px;
+    word-spacing: 1.1px;}	
+				
+.loan-process-heading{
+	color:#ffffff;
+	text-align:center}	
+	
+.loan-steps{background:url(../images/Home-Page/lp-loan/BG2.png)no-repeat center;
+			background-attachment:fixed;
+			background-size:cover;}	
+	
+.loan-steps-process {
+    background: #ffffff;
+    padding: 26px 37px 40px 80px;
+    width: 85%;
+    margin: 24px auto 10px auto;
+    height: 150px;
+	transition:all .3s;
+}
+
+.loan-steps-process:hover {
+    background: #173e7a;
+    color:#ffffff
+}
+
+.required-doc{margin-top:15px;margin-right: 15px;}
+
+.required-doc li .fa-check{
+	color:#173e7a;margin-right:10px}
+.icon-box{
+	 padding: 15px;
+    float: left;
+    left: 0%;
+    position: absolute;
+    background: #ffffff;
+	border: 5px dotted transparent;
+    border-image: linear-gradient(to right, #006ab4 , #00d6c3);
+    border-image-slice: 1;
+    transition: all .3s linear;}				
+
+.loan-apply{    margin: 10px auto;}
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'FontAwesome';  /* essential for enabling glyphicon */
+    content: "\f078";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: #ffffff;         /* adjust as needed */
+	
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f077";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.sty-col-icon{
+	color:#ffffff;
+	font-size:18px;
+	margin-right:8px;}
+	
+.panel-default>.panel-heading {
+    color: #ffffff!important;
+    background-color: #173e7a!important;
+    border: 1px solid #173e7a!important;
+}	
+
+
+
+.brands-wrap {
+  padding-top: 10%; 
+  max-width: 960px;
+  margin: 0 auto;
+}
+.carousel {
+  background: transparent;
+}
+.gallery-cell {
+  width: 100%; /* half-width */
+  height: auto;
+  padding: 0 15px; 
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  @media (min-width: 548px) {
+    width: 33.3%;
+  }
+  &.is-selected {
+    img {
+      transform: scale(1);
+      -webkit-filter: grayscale(0) blur(0); 
+      filter: grayscale(0) blur(0); 
+    }
+  }
+  img {
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550); /* easeInOutBack */
+    max-width: 150px;
+    display: inline-block; 
+    transform: scale(0.7);
+    -webkit-filter: grayscale(100%) blur(2px); 
+    filter: grayscale(100%) blur(2px); 
+  }
+}
+.flickity-prev-next-button.previous {
+  left: -40px;
+ 
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+.brand-carousel {
+ margin: 0 60px; /* space for prev/next buttons */
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+  box-shadow: 0 0 5px black; 
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button {
+  background: transparent;
+  &:hover {
+    background: transparent; 
+  }
+}
+
+
+/*---------loanadda career classes--------------*/	
+
+.loanadda-career {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 11px auto 15px;
+    /*background-color: #ffffff;*/
+    transition: all .3s linear;
+    /*box-shadow: 0 3px 5px -4px #000000;*/
+	font-size:17px;
+	transition:linear .3s 
+}
+.loanadda-career img{
+	/*margin-right:20px;*/
+	width:40px}
+
+.loanadda-career:hover{
+	border-top-left-radius:1px;
+	border-top-right-radius:24px;
+	border-bottom-right-radius:1px;
+	border-bottom-left-radius:24px}
+
+.career-opening{clear:both;}
+
+
+
+/*---------loanadda equifax-form classes--------------*/	
+
+.equifax-form {
+    alignment-adjust: central;
+    /*margin: 0 30px ;*/
+	width:80%;
+	display:inline-block;
+}
+
+.equifax-credit-detail{background-color:#ffffff!important}
+
+
+.equifax-table{overflow-x:auto}
+
+.equifax-table table{
+	text-align:center; 
+	width:100%;
+	white-space:nowrap;
+	overflow-x:auto
+	}
+	
+.equifax-table table>thead>tr>th{
+	text-align:center;
+	padding:20px 15px;
+	color:#ffffff;
+	font-size:16px}
+	
+.equifax-table table>tbody>tr>td{
+	padding:15px;
+	font-size:17px;
+	font-weight:500;
+	vertical-align:inherit}
+	
+.equifax-table .fa{
+	font-size: 35px;
+    margin-right: 20px;
+    float: left;
+    padding: 3px 0;}
+.equifax-table p {
+	vertical-align:text-bottom;
+	}	
+.equifax-table strong{
+	font-size:18px;
+	vertical-align:inherit}	
+	
+	
+.rate{width:100%!important;
+text-align:center;}	
+	
+.rate-base-layer{
+	font-size:24px;
+	}	
+	
+.rate-hover-layer{
+font-size:24px;
+color:#093;
+}	
+	
+.rate-select-layer
+    {
+    font-size:24px;
+	color:#093;
+        }	
+
+
+/*---------loanadda Loan Category classes--------------*/			
+		
+.loan-cat-form{
+	border:1px solid #CCC;
+	padding:10px 20px;
+	background-color:#ffffff;
+	border-radius:7px;
+	box-shadow:0 2px 5px #666666
+}
+.loan-cat-form-input{
+	padding: 22px 0 5px;
+    width: 100%;}		
+
+
+/*---------loanadda Blog classes--------------*/	
+
+.blog-item{margin:15px 0;}
+    	.blog-item li{ padding:8px 10px;background-color:#006ab4; margin-bottom:5px; transition: all 0.3s ease-in;text-transform:capitalize;list-style:none}
+		.blog-item li a{color:#ffffff}
+		.blog-item li:hover{background-color:#173e7a}
+.web-subheading h4 a{color:#173e7a}	
+
+.blog-loanadda{
+	position:relative;
+	text-align:center;
+	}
+
+.blog-artical{
+	background-color:#ffffff;
+	margin-right:20px}
+	
+.blog-artical img{
+	width:100%}
+	
+.blog-artical:first-child{
+	margin-left:0
+	}
+.blog-artical:last-child{
+	margin-right:0
+	}				
+
+.blog-artical .mask{
+	padding:15px}
+	
+.blog-artical .mask h3{
+	font-weight:600;
+	font-size:16px;
+	line-height:22px;
+	color:#173e7a;
+	margin: 0 0 7px 0;
+	}
+.blog-artical .mask h3:hover{
+	color:#f79709
+}
+	
+.blog-artical .mask .btn-warning{
+	display:inline-block;
+	margin-top:10px}	
+	
+.blog-artical p{
+	font-size:14px;
+	line-height:20px}		
+
+.blog-loanadda .slick-prev{
+	position: absolute;
+    left: 3%;
+    top: 50%;
+	transform:translate(-50%,-50%);
+    width: 1%;
+	text-align:center;
+	vertical-align:middle
+	}
+
+.blog-loanadda .slick-next{
+	position: absolute;
+    right: 3%;
+    top: 50%;
+	transform:translate(-50%,-50%);
+    width: 1%;
+	text-align:center
+	}	
+	
+.blog-loanadda .slick-prev::before{
+	font-family: fontAwesome;
+  	content: "\f053";
+  	font-size:25px;
+  	color:#173e7a;
+	}
+
+
+.blog-loanadda .slick-next::before{
+	font-family: fontAwesome;
+	content:"\f054";
+	font-size:25px;
+	color:#173e7a;
+	}	
+	
+button.slick-arrow{
+	background-image:none!important;
+	background-color: transparent;
+	border:none;
+	color:transparent
+	}	
+button.slick-arrow:focus{
+	outline:none
+}
+
+.blog-from{
+	background-color: #ffffff;
+    box-shadow: 0 2px 6px 0px #272727;
+    padding: 30px;
+	position:relative}	
+	
+.blog-from label{
+	font-size:12px;
+	font-weight:normal;
+	}	
+.blog-from input[type="checkbox"]{
+	vertical-align:sub}	
+
+..blog-list{
+	position:relative}
+	
+.blog-list ul li{
+	list-style:none}
+	
+.blog-list ul li::before{
+	vertical-align: top;
+    font-family: 'FontAwesome';
+    content: "\f0a4";
+    color: #173e7a;
+    font-size: 18px;
+    margin-right: 7px;}
+			
+	
+/*.blog-from label:before{
+	content:"";
+	border:2px solid #2e92f8;
+	//display:inline-block;
+	width:17px;
+	height:17px;
+	position:absolute;
+	background-color:#fff;
+	margin-right:10px;
+	bottom:70px;
+	transition:border .15s ease-in-out
+	}
+	
+.blog-from input[type="checkbox"]:checked + label:after{
+	font-family:'FontAwesome';
+	content:"\f00c";
+	}	
+	
+.blog-from label:after{
+	//display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+	font-size: 11px;
+	bottom:70px;
+    color: #2e92f8;
+}*/
+		
+.artical{
+	//border:1px solid #CCC;
+    //box-shadow: 0 1px 9px -5px #333;
+	margin:20px 0;
+	border-radius:5px;
+	background-color:#fff
+	}		
+.artical img{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	}
+
+.article-menu{
+	text-align:center;
+	margin:30px 0;}
+	
+.article-menu ul li{
+	list-style:none;
+	display:inline-block;
+	padding:10px 15px;
+	background-color:#eaeaea;
+	border-radius:2px;
+	transition:.15s ease-in-out
+	}
+.article-menu ul li a{
+	color:#173e7a
+	}			
+.article-menu ul li:hover{
+	background-color:#CCC;
+	box-shadow: 0 1px 2px 0px #333;}
+	
+.article-menu ul li.active{
+	background-color:#CCC;
+	box-shadow: 0 1px 2px 0px #333;}			
+		
+/*---------loanadda credit from classes--------------*/	
+
+	.credit-score-power{
+		background-color: #f2f5fc;
+		box-shadow:inset 1px 3px 10px -4px #333333;
+		padding:15px 0;
+		text-align:center}
+	.credit-form{text-align:center;padding:20px 0px}
+	
+	.creditform-heading{
+		color:#333232; margin-top:0; margin-bottom:25px;font-size:16px;text-align:center;}
+		
+	.creditscore-work{margin-top:75px}	
+		
+	.loanadda-creditscore{
+		padding:15px;
+		max-height:310px;
+		height:310px;
+		}
+	.loanadda-creditscore li{
+		line-height: 24px;
+		font-size: 15px;
+		margin-left: 15px;
+		color:#ffffff;
+		text-align:left
+		}	
+	.loanadda-creditscore.first-child{
+		background-color:#5cb878;
+		}
+	.loanadda-creditscore.nth-child{
+		background-color:#5cb898;
+		}	
+	.loanadda-creditscore.last-child{
+		background-color:#5cb8b8;
+		}	
+	.creditscore-process img{
+		margin-top: -101px;}
+		
+	.creditscore-heading{
+		color: #173e7a;
+		font-size:20px;
+		line-height:25px
+		}	
+	.creditfacility{width:80%;text-align:center;margin:20px auto;display:inline-block}	
+		
+	.loanadda-creditscore-facility {
+		color: #3C3C3C;
+		padding: 11px 19px;
+		transition: all .3s linear;
+		width: 100%;
+		}
+	.form-creditscore{text-align:center}
+	.form-creditscore{padding:0 20px}
+	.credit-testimonial{
+		background-color: #012542;
+		color:#ffffff;padding:30px;
+		text-align:center;}
+	.avatar {
+	  vertical-align: middle;
+	  width: 100px;
+	  height: 100px;
+	  border-radius: 50%;
+	}	
+	
+	 .testimoal-user{float:left; padding:0 20px}
+	.testimoal-comment{text-align:center; padding:20px 20px }
+
+
+	
+
+/*---------loanadda mobile menu classes--------------*/
+
+
+.mobile-menu{display:none}
+
+@media only screen and (max-width:990px){
+
+.header{display:none}	
+.mobile-menu{display:block;background:rgba(225,225,225,.5)}
+	
+	.menu-bar{
+		float: right;
+		margin-right: 15px;
+		margin-top: 2px;
+		cursor: pointer
+	}
+	.bar1, .bar2, .bar3{
+		width: 32px;
+		height: 4px;
+		background: #676666;
+		transition: .4s;
+		margin: 4px 0px;
+		
+	}
+	
+	.change .bar1{
+		transform: rotate(-45deg)translate(-9px,4px)
+	}
+	
+	.change .bar2{
+		opacity: 0
+	}
+	
+	.change .bar3{
+		transform: rotate(45deg) translate(-6px,-3px)
+	}
+
+#mobnav {
+	display:none;	
+    float: left;
+    margin-top: 33px;
+	clear:both;
+	width:100%;
+	transition:.5s all linear;
+}
+#mobnav li{
+	display:inline-block;
+	width:100%} 
+
+#mobnav li>a:first-child {
+	padding-left:0
+}
+
+#mobnav li>a {
+    width: 100%;
+	list-style: none;
+	color: #4b4b4b;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 5px 15px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 5px 0;
+	background-color: transparent;
+	transition: all .3s linear;
+}
+	
+.login {
+    display: inline-block;
+	width: 40%;
+	padding:8px 45px
+}
+
+.download-app {
+    display: inline-block;
+	width: 40%;
+	padding: 8px 15px;
+}
+
+	
+.checkmark-cre {
+    width: 91%;
+}
+
+.checkedbtn-cre{
+    width: 91%;}
+		
+}
+
+@media (min-width:1024px) and (max-width:1199px){
+	
+	
+.breadcrubs {
+	padding: 62px 0;
+	height: 180px;
+}	
+	
+	.processimg {
+    margin-left: 49px;
+}
+
+.loanadda-app {
+	width: 95%;
+}
+
+
+
+.app-facility {
+	width: 140px;
+	height: 140px;
+}
+
+.app-facility h4 {
+	padding: 43px 15px;
+}
+	
+.newsletter-submit {
+	width: 32%;
+}	
+
+.loanadda-about {
+	padding: 30px 10px;
+}
+
+/*---------loanadda mobile Loans classes--------------*/
+
+.loan-form-heading h3 {
+	font-size: 24px;
+	margin: 5px 0;
+}
+
+.checkmark {
+    width: 67%;
+}
+
+.checkedbtn {
+    width: 67%;
+}
+
+.loan-steps-process {
+	padding: 26px 4px 40px 70px;
+	width: 93%;
+	margin: 24px auto 10px auto;
+}
+.icon-box {
+	left: -3%;
+	padding: 9px;
+	top: 57px;
+}
+	
+.loan-apply {
+	margin: 13px auto;
+}	
+.pie-apply-btn {
+	margin-top: 37%;
+}
+.social-media{float:right}	
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-process img {
+	width: 158px;
+}
+.creditfacility {
+	width: 89%;
+}
+	}	
+	
+@media (min-width:768px) and (max-width:1023px){
+
+
+
+/*---------loanadda mobile common classes--------------*/
+
+.web-heading-bl h3 {
+	font-size:20px!important
+}	
+
+.breadcrubs {
+	padding: 50px 0 0;
+	height: 160px;
+}	
+	
+.disclaimer{
+	padding:25px 0}
+
+/*---------loanadda mobile home page classes--------------*/
+
+.slider-caption {
+    left: 48%;
+	top: 19%;;
+}
+
+.slider h2 {
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.processimg {
+    margin-left:26px;
+}
+
+.modal-dialog {
+    width: 711px;
+}	
+	
+.popup-left {
+	width: 25%;
+}	
+.popup-right {
+	float: right;
+	width: 55%;
+	margin-top: 5px;
+}
+.modal-title {
+	font-size: 28px;
+}
+
+.loanadda-facility {
+    margin: 0px auto 0;
+	width:100%
+}
+
+.loanadda-app {
+    width: 100%;
+}
+	
+
+
+
+.app-facility {
+	width: 140px;
+	height: 140px;
+	margin: 20px 50px 20px 30px;
+}
+
+.app-facility h4 {
+	padding: 43px 15px;
+}
+
+.loanadda-app-btnb {
+    padding: 10px 16px;
+}
+
+.loanadda-ration h4 {
+	font-size: 21px;
+}
+
+.newsletter-submit {
+	width: 32%;
+}
+
+
+/*---------loanadda mobile Loans classes--------------*/
+
+	
+.loan-banner-heading h2 {
+    font-size: 25px;
+    margin-top: 0;
+}	
+
+.loan-banner-heading h1 {
+    font-size: 32px;
+    margin-top: 5px;
+}
+	
+.loan-banner-heading li {
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.loan-form-heading h3 {
+	font-size: 24px;
+	margin: 5px 0;
+}
+
+.loan-boder{background-image:none}	
+	
+.form-group {
+	margin-bottom: 8px!important;
+}
+
+.mgb-14{margin-bottom:7px}
+
+.checkmark {
+    width: 84%;
+}
+
+.checkedbtn {
+    width: 84%;
+}
+.loan-steps-process {
+	padding: 26px 4px 40px 65px;
+	width: 95%;
+	margin: 24px auto 30px auto;
+}
+.icon-box {
+	left: -3%;
+	padding: 9px;
+	top: 60px;
+}
+
+.icon-box img{
+	width:50px
+}
+	
+.loan-apply {
+	margin: -10px auto;
+}
+.loan-apply p{
+	font-size:14 px
+}	
+
+/*---------loanadda mobile EMI-CAL classes--------------*/
+
+.loanadda-about {
+	padding: 30px 15px;
+}
+
+.emi-calculator {
+	padding: 10px 50px;
+}
+
+.chart {
+	left: 38%;
+}	
+.color-label {
+	float:none;
+	margin-top: 0% !important;
+	margin-left: 459px;
+	position: absolute;
+	top: 27%;
+}
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 27%;
+	margin-left: 50%;
+	margin-bottom: 23px;
+}
+
+/*---------loanadda mobile career classes--------------*/
+
+.career-banner {
+	height: 190px;
+}
+
+.sm-half-part{height: 817px;}
+
+/*---------loanadda mobile credit score classes--------------*/
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-process img {
+	width: 133px;
+}
+.creditfacility {
+	width: 100%;
+}
+
+}
+
+@media (min-width: 640px) and (max-width: 767px){
+.login {
+	padding: 8px 37px;
+}
+
+/*---------loanadda mobile common classes--------------*/
+
+.web-heading-bl h3 {
+	font-size:20px!important
+}	
+
+.breadcrubs {
+	padding: 50px 0 0;
+	height: 160px;
+}	
+	
+.disclaimer{
+	padding:25px 0}
+
+/*---------loanadda mobile home page classes--------------*/	
+	
+.slider-caption {
+    left: 50%;
+	top: 28%;
+}
+
+.slider h2 {
+	font-size: 29px;
+	line-height: 30px;
+}
+
+.slider p {
+	font-size: 16px;
+}
+
+.home-loan-service {
+	margin: 0px -15px;
+	border: 1px solid #CCC;
+	border-top: none;
+}
+
+.hl-service1 {
+	border-top-left-radius: 0px;
+}
+.hl-service2 {
+	border-top-right-radius: 0px;
+}
+
+.loanadda-facility {
+    margin: 0px auto 0;
+	width:100%;
+	padding: 10px 29px;
+}
+
+.processimg {
+    margin-left:89px;
+}	
+.process-line {
+	width: 35%;
+	left: 32%;
+}
+.process-line-last{
+	width: 35%;
+	left: 32%;
+	}
+	
+.popup-left{display:none!important}	
+	.popup-left img{display:none!important}
+	
+.modal-dialog {
+    width: 501px;
+}	
+	
+.popup-left {
+	width: 20%;
+}
+
+.popup-left img{width: 266px;}
+
+.popup-right {
+	float: right;
+	width: 55%;
+	margin-top: 5px;
+}
+.modal-title {
+	font-size: 19px;
+}	
+
+.loanadda-app {
+    width: 55%;
+	float: right;
+}
+
+.phoneapp{
+	width:42%;
+	float:left}
+
+.app-facility {
+	width: 110px;
+	height: 110px;
+	margin: 11px 50px 20px 30px;
+}
+
+.app-facility h4 {
+	padding: 32px 15px;
+	font-size: 16px;
+}
+
+.loanadda-app-btnb {
+    padding: 8px;
+	font-size: 16px;
+}
+
+.loanadda-app-btnw{
+	padding: 8px;
+	font-size: 16px;
+	}
+
+.newsletter-submit {
+	width: 32%;
+}	
+.appdownload {
+	float: left;
+}	
+
+.loanadda-ration h4 {
+	font-size: 21px;
+}
+
+.news-report img{
+	height:80px}
+
+/*---------loanadda mobile downloadapp classes--------------*/	
+	
+.downloadapp-banner {
+    padding: 20px 0 52px;
+}	
+	
+.mobileimg{
+	float:left;
+	width:40%
+	}
+		
+.dapp-banner-text {
+    float: right;
+	transition:.3s all linear;
+}	
+
+.dapp-banner-text {
+    margin-right: 20px;
+}	
+.app-banner-text h1 {
+    font-size: 30px;
+	margin-top: 0px;
+}
+
+.banner-girl {
+    margin: 15px 0px 0 20%;
+    width: 65%;
+}
+
+.loanadda-dapp {
+    margin: 35px;
+}
+
+.loanadda-dapp:first-child {
+    margin-top: 0px;
+}
+
+/*---------loanadda mobile footer classes--------------*/		
+.footer-mid {
+    padding: 15px 0px 0px;
+    text-align: center;
+}
+	
+/*---------loanadda mobile Loans classes--------------*/
+
+.bl-banner {
+	padding: 0px 0px 35px;
+}
+
+.pl-banner {
+	padding: 0px 0px 35px;
+}
+
+.hl-banner {
+	padding: 0px 0px 35px;
+}
+
+.loan-banner {
+	padding: 0px 0px 35px;
+}
+		
+.loan-banner-heading {
+	margin-top: 9%;
+}	
+.loan-banner-heading h2 {
+    font-size: 23px;
+    margin-top: 0;
+}	
+
+.loan-banner-heading h1 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+	
+.loan-banner-heading li {
+    line-height: 22px;
+    font-size: 15px;
+}
+.loanadda-loan-form {
+    margin-top: 45%;
+}	
+
+.mgb-14{margin-bottom:14px}
+
+.checkmark {
+    width: 91%;
+}
+
+
+.checkedbtn {
+    width: 91%;
+}
+
+.loan-steps {
+	padding: 30px 0;
+}
+
+.loan-steps-process {
+	padding: 26px 19px 43px 90px;
+	width: 74%;
+}
+.loan-steps-process:last-child {
+	margin: 24px auto 20px auto;
+}	
+.icon-box {
+	left: 6%;
+}	
+.loan-apply {
+    margin: 6px auto;
+}
+
+.loan-boder{background-image:none}
+
+.loan-steps{padding:30px 0}	
+
+/*---------loanadda mobile Loans classes--------------*/
+.emi-calculator {
+	padding: 10px 42px;
+	margin: 15px 0 auto;
+}
+
+.piechart-cal{margin-bottom: 45px;}
+.chart {
+	left: 38%;
+	top: 0%;
+}	
+.color-label {
+	float:none;
+	margin-top: 0% !important;
+	margin-left: 359px;
+	position: absolute;
+	top: 27%;
+}
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 30%;
+	margin-left: 50%;
+	margin-bottom: 23px;
+}
+
+	/*---------loanadda mobile career classes--------------*/
+
+.career-banner {
+	height: 155px;
+}	
+.text-slide p {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.item-1, .item-2, .item-3 {
+    width: 77%;
+	left: 11%;
+}
+
+.loanadda-career {
+	font-size: 14px;
+}	
+
+
+.sm-half-part{width:100%;
+	padding:20px 10px}
+	
+
+/*---------loanadda mobile credit score classes--------------*/
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-work{margin-top:0px;padding:30px 0}
+.creditscore-process img {
+	width: 133px;
+	margin-top: -85px;
+}
+.creditfacility {
+	width: 100%;
+}	
+	
+.loanadda-creditscore {
+	padding: 15px;
+	max-height: 220px;
+	height: 198px;
+	margin: 90px 0 0;
+}
+.credit-score{text-align:center; padding-bottom:20px}	
+	
+}
+
+@media (min-width:600px) and (max-width:767px){
+.checkmark {
+	width: 90%!important;
+}
+
+.checkedbtn {
+    width: 90%!important;
+}
+
+.bl-banner {
+	padding: 0px 0px 35px;
+}
+
+.loanadda-loan-form {
+    margin-top: 49%!important;
+}
+
+.loanadda-app {
+    width: 52%!important;
+    float: right;
+}
+
+	
+/*---------loanadda mobile EMI CAl classes--------------*/
+.emi-calculator {
+	padding: 10px 42px;
+	margin: 15px 0 auto;
+}
+
+.piechart-cal{margin-bottom: 45px;}
+.chart {
+	left: 38%;
+	top: 0%;
+}	
+.color-label {
+	float:none;
+	margin-top: 0% !important;
+	margin-left: 343px!important;
+	position: absolute;
+	top: 27%;
+}
+
+
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 55%!important;
+	margin-left: 0%!important;
+	margin-bottom: 23px;
+}
+
+.sm-half-part{width:100%;
+	padding:20px 10px}
+	
+
+/*---------loanadda mobile credit score classes--------------*/
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-work{margin-top:0px;padding:30px 0}
+.creditscore-process img {
+	width: 133px;
+	margin-top: -85px;
+}
+.creditfacility {
+	width: 100%;
+}	
+	
+.loanadda-creditscore {
+	padding: 15px;
+	max-height: 220px;
+	height: 198px;
+	margin: 90px 0 0;
+}
+.credit-score{text-align:center; padding-bottom:20px}			
+	
+	}
+
+@media (min-width:480px) and (max-width:639px){
+
+#mobnav li{
+	display:inline-block}
+	
+.login {
+	width: 60%;
+}
+
+.download-app {
+	width: 60%;
+}	
+
+/*---------loanadda mobile common classes--------------*/
+
+.web-heading-bl h3 {
+	font-size:20px!important
+}	
+
+.breadcrubs {
+	padding: 35px 0;
+	height: 130px;
+}
+	
+.disclaimer{
+	padding:25px 0}
+
+/*---------loanadda mobile home page classes--------------*/	
+	
+.slider-caption {
+    left: 43%;
+	top: 19%;
+}
+
+.slider h2 {
+	font-size: 23px;
+	line-height: 20px;
+}
+
+.slider p {
+	font-size: 13px;
+}
+
+.home-loan-service {
+	margin: 0px -15px;
+	border: 1px solid #CCC;
+	border-top: none;
+}
+
+.hl-service1 {
+	border-top-left-radius: 0px;
+}
+.hl-service2 {
+	border-top-right-radius: 0px;
+}
+
+.loanadda-facility {
+    margin: 0px auto 0;
+	width:100%;
+	padding:10px 29px
+}
+
+.processimg {
+    margin-left:89px;
+}	
+.process-line {
+	width: 35%;
+	left: 32%;
+}
+.process-line-last{
+	width: 35%;
+	left: 32%;
+	}
+
+.popup-left {
+	display: none;
+}
+
+.popup-right {
+	float: none;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.modal-title {
+	font-size: 24px;
+	padding: 0 21px;
+}
+
+.popup-form {
+	padding: 10px 20px;
+	margin-top: 5px;
+}
+	
+
+.loanadda-app {
+    width: 57%;
+	float: right;
+}
+
+.phoneapp{
+	width:42%;
+	float:left}
+
+.app-facility {
+	width: 90px;
+	height: 90px;
+	margin: 11px 0px 20px 7px;
+}
+
+.app-facility h4 {
+	padding: 23px 13px;
+	font-size: 14px;
+}
+
+.loanadda-app-btnb {
+    padding: 8px 3px;
+	font-size: 14px;
+}
+
+.loanadda-app-btnw{
+	padding: 8px;
+	font-size: 14px;
+	}
+
+.newsletter-submit {
+	width: 32%;
+}	
+.appdownload {
+	float: left;
+}
+	
+.loanadda-ration h4 {
+	font-size: 20px;
+}	
+	
+.news-report img{
+	height:80px}
+
+/*---------loanadda mobile footer classes--------------*/		
+.footer-mid {
+    padding: 15px 0px 0px;
+    text-align: center;
+}	
+
+.loanadda-footer h4 {
+    font-size: 13px;
+}	
+
+/*---------loanadda mobile Dowload App classes--------------*/
+	
+.downloadapp-banner {
+    padding: 15px 0 40px;
+}	
+	
+.mobileimg{
+	float:left;
+	width:42%
+	}	
+	
+.dapp-banner-text {
+    float: right;
+	transition:.3s all linear;
+	width: 55%;
+}	
+
+.dapp-banner-text {
+    margin-right: 5px;
+}	
+.app-banner-text h1 {
+    font-size: 24px;
+	margin-top: 0px;
+}
+
+.app-banner-text h3 {
+    font-size: 16px;
+	margin-top: 0px;
+}
+
+.dapp-btn {
+    padding: 8px 22px;
+    font-size: 14px;
+	margin: 4px 0 0 15px;
+}
+
+.banner-girl {
+    margin: 10px 0px 0 20%;
+    width: 65%;
+}	
+	
+.loanadda-dapp:first-child {
+    margin-top: 0px;
+}	
+
+/*---------loanadda mobile Loans classes--------------*/
+
+.bl-banner {
+	padding: 5px 0px 35px;
+}
+.pl-banner {
+	padding: 5px 0px 35px;
+}
+.hl-banner {
+	padding: 5px 0px 35px;
+}
+.loan-banner {
+	padding: 5px 0px 35px;
+}		
+	
+.loan-banner-heading h2 {
+    font-size: 23px;
+    margin-top: 0;
+}	
+
+.loan-banner-heading h1 {
+    font-size: 25px;
+    margin-top: 5px;
+}
+	
+.loan-banner-heading li {
+    line-height: 22px;
+    font-size: 15px;
+}
+.loanadda-loan-form {
+    margin-top: 60%;
+}	
+
+.mgb-14{margin-bottom:14px}
+
+.checkmark {
+    width: 88%;
+}
+
+.checkedbtn {
+    width: 88%;
+}
+
+.btn-lg {
+	padding: 7px 16px!important;
+}
+.loan-boder {
+	background-image: none
+}
+
+.loan-steps {
+	padding: 30px 0;
+}
+
+.loan-steps-process {
+	padding: 26px 19px 43px 90px;
+	width: 74%;
+}
+.loan-steps-process:last-child {
+	margin: 24px auto 20px auto;
+}	
+.icon-box {
+	left: 6%;
+}	
+.loan-apply {
+    margin: 6px auto;
+}	
+	
+/*---------loanadda mobile EMI CAL classes--------------*/
+.emi-calculator {
+	padding: 10px 42px;
+	margin: 15px 0 auto;
+}
+
+.piechart-cal{margin-bottom: 0px;}
+.chart {
+	left: 50%;
+	top: 0%;
+}	
+.color-label {
+	float:none;
+	margin-top: 0% !important;
+	margin-left: 268px;
+	position: absolute;
+	top: 27%;
+}
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 70%;
+	margin-bottom: 0px;
+}
+
+	/*---------loanadda mobile career classes--------------*/
+
+.career-banner {
+	height: 138px;
+}	
+.text-slide p {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.item-1, .item-2, .item-3 {
+    width: 77%;
+	left: 11%;
+}
+
+.loanadda-career {
+	font-size: 14px;
+}	
+
+.sm-half-part{width:100%;
+	padding:20px 10px}	
+	
+
+
+/*---------loanadda mobile credit score classes--------------*/
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-work{margin-top:0px;padding:30px 0}
+.creditscore-work h1{font-size:30px}
+.creditscore-process img {
+	width: 133px;
+	margin-top: -85px;
+}
+.creditfacility {
+	width: 100%;
+}	
+	
+.loanadda-creditscore {
+	padding: 15px;
+	max-height: 220px;
+	height: 158px;
+	margin: 90px 0 0;
+}
+.credit-score{text-align:center; padding-bottom:20px}	
+
+.credit-score h2{font-size:25px}
+
+.loanadda-app-btnb1{
+	font-size:18px}		
+.testimoal-comment{
+	padding:0 20px}	
+
+.checkmark-cre {
+    width: 89%;
+}
+
+.checkedbtn-cre{
+    width: 89%;}
+	
+	}
+	
+
+
+	
+@media (min-width:320px) and (max-width:479px){
+#mobnav li{
+	display:block}	
+	
+/*---------loanadda mobile common classes--------------*/
+
+.web-heading-bl h3 {
+	font-size:20px!important
+}	
+
+.breadcrubs {
+	padding: 32px 0;
+	height: 116px;
+}	
+
+.breadcrubs h2 {
+	font-size: 22px;
+}	
+
+.login {
+	width: 65%;
+}
+
+.download-app {
+	width: 65%;
+}
+
+/*---------loanadda mobile home page classes--------------*/	
+	
+.slider-caption {
+    left: 43%;
+	top: 14%;
+}
+
+.slider h2 {
+	font-size: 18px;
+	line-height: 4px;
+	padding:0
+}
+
+.slider p {
+	font-size: 12px;
+}
+
+.home-loan-service {
+	margin: 0px -15px;
+	border: 1px solid #CCC;
+	border-top: none;
+	font-size: 13px;
+}
+
+.home-loan-service img {
+	margin-bottom: 5px;
+	width: 35px;
+}
+
+.hl-service1 {
+	border-top-left-radius: 0px;
+}
+.hl-service2 {
+	border-top-right-radius: 0px;
+}
+
+.loanadda-facility {
+    margin: 0px auto 0;
+	width:100%;
+	padding: 10px;
+}
+
+.loan-process img {
+	margin-bottom: -7px;
+	width: 50%;
+}
+
+.loan-process1 img {
+	margin-bottom: -7px;
+	width: 30%;
+}
+
+.processimg {
+    margin-left:60px;
+}	
+.process-line {
+	width: 35%;
+	left: 32%;
+}
+
+.popup-left {
+	display: none;
+}
+
+.popup-right {
+	float: none;
+	width: 100%;
+	margin-top: 0px;
+}
+
+.modal-title {
+	font-size: 22px;
+}
+
+.popup-form {
+	padding: 10px 20px;
+	margin-top: 5px;
+}
+
+.process-line-last{
+	width: 35%;
+	left: 32%;
+	}
+.loanadda-app-btnb1 {
+	font-size: 18px;
+}	
+
+.loanadda-app {
+    width: 82%;
+	margin-top:20px
+}
+
+.phoneapp {
+	width: 63%;
+	/* float: left; */
+	margin: 0 auto;
+}
+
+.app-facility {
+	width: 105px;
+	height: 105px;
+	margin: 11px 0px 20px 7px;
+}
+
+.app-facility h4 {
+	padding: 30px 10px;
+	font-size: 15px;
+}
+
+.loanadda-app-btnb {
+    padding: 8px 3px;
+	font-size: 14px;
+}
+
+.loanadda-app-btnw{
+	padding: 8px;
+	font-size: 14px;
+	}
+
+.newsletter-submit {
+	width: 42%;
+	padding: 14px 16px;
+	font-size: 14px;
+}	
+.appdownload {
+	float: left;
+}
+.loanadda-ration img {
+	width: 32%;
+}	
+.loanadda-ration h4 {
+	font-size: 17px;
+}	
+.loanadda-ration p {
+	font-size: 13px;
+}	
+	
+.news-report img{
+	height:70px}	
+	
+	
+	/*---------loanadda mobile footer classes--------------*/		
+.footer-mid {
+    padding: 5px 0px 0px;
+}	
+
+.loanadda-footer h4 {
+    font-size: 13px;
+}
+
+
+element {
+
+}
+.footer-menu li {
+    margin-top: 6px;
+
+}
+
+.banner-girl {
+    display:none
+}
+
+
+
+/*---------loanadda mobile Dowload App classes--------------*/
+	
+.downloadapp-banner {
+    padding: 15px 0 50px;
+}	
+	
+.mobileimg{
+	width: 67%;
+	margin: 0 auto;
+	}	
+	
+.dapp-banner-text {
+   	margin:20px auto 0;
+	transition:.3s all linear;
+}
+
+	
+.app-banner-text h1 {
+    font-size: 26px;
+	margin-top: 0px;
+}
+
+.app-banner-text h3 {
+    font-size: 20px;
+	margin-top: 0px;
+}
+
+.dapp-btn {
+    padding: 8px 22px;
+    font-size: 14px;
+	margin: 4px 0 0 15px;
+}
+
+
+/*---------loanadda mobile contact classes--------------*/	
+	
+.contact-detail {
+	width: 100%;
+	font-size:12px
+}	
+
+
+/*---------loanadda mobile Loanss classes--------------*/
+	
+.bl-banner {
+	padding: 20px 0 35px;
+}
+.hl-banner {
+	padding: 20px 0 35px;
+}
+.pl-banner {
+	padding: 20px 0 35px;
+}
+.loan-banner {
+	padding: 20px 0 35px;
+}		
+	
+.loan-banner-heading h2 {
+    font-size: 20px;
+    margin-top: 0;
+}	
+
+.loan-banner-heading h1 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+	
+.loan-banner-heading li {
+    line-height: 20px;
+    font-size: 14px;
+}
+.loanadda-loan-form {
+    margin-top: 72%;
+}	
+
+.mgb-14{margin-bottom:14px}
+.loan-form-heading h3 {
+	font-size: 19px;
+	margin-top: 4px;
+	margin-bottom: 0px;
+}
+
+.radiobt strong {
+	width: 100%;
+	z-index: 9;
+}
+.checkmark {
+	width: 83%;
+}
+
+.checkedbtn {
+    width: 83%;
+}
+
+.checkread {
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.btn-lg {
+	padding: 7px 13px;
+	font-size: 18px;
+}
+
+.loan-boder {
+	background-image: none;
+}
+.web-subheading h4 {
+	margin-top: 0;
+}
+	
+.loan-lp-overview li {
+	padding: 7px 0px 0 0;
+	font-size:14px;
+}	
+
+.loan-lp-overview p {
+	line-height: 20px;
+}
+	
+.web-heading-w h3 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 18px;
+}	
+.loan-steps {
+	padding: 30px 0;
+}
+.loan-steps-process {
+	margin: 20px auto 20px auto;
+	padding: 30px 10px 40px 81px;
+	width: 80%;
+}
+.loan-apply {
+	margin: -3px auto;
+	font-size: 13px;
+}
+.icon-box {
+	padding: 10px;
+	left: 4%;
+}
+
+.required-doc {
+	margin-top: 0px;
+}
+
+
+.disclaimer{
+	padding:25px 0}
+
+	
+/*---------loanadda mobile EMI CAL classes--------------*/
+.emi-calculator {
+	padding: 10px 42px;
+	margin: 15px 0 auto;
+}
+
+.piechart-cal{margin-bottom: 0px;}
+.chart {
+	left:78%;
+	top: 0%;
+}	
+.color-label {
+	display:none
+}
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 100%;
+	margin-bottom: 0px;
+}
+
+
+.set-amount {
+	width: 65% !important;
+}
+
+.amount {
+	font-size: 15px;
+	font-weight:600
+}
+
+.half-part {
+	padding: 10px 0;
+}
+
+.half-part h4 {
+	font-size: 18px;
+	margin-top:0px;
+	margin-top: -5px;
+}
+.half-part p{font-size:13px}
+
+
+/*---------loanadda mobile career classes--------------*/
+
+.career-banner {
+	height: 150px;
+}	
+	
+.text-slide p {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.item-1, .item-2, .item-3 {
+    width: 73%;
+	left: 13%;
+}
+
+.loanadda-career {
+	font-size: 14px;
+}	
+.sm-half-part{width:100%;
+	padding:30px 0}
+
+.equifax-form {
+	margin: 0px;
+}
+
+
+
+/*---------loanadda mobile credit score classes--------------*/
+
+.credit-form{background:rgba(23,62,122,.1)}
+.creditscore-work{margin-top:0px;padding:30px 0}
+.creditscore-work h1{font-size:30px}
+.creditscore-process img {
+	width: 133px;
+	margin-top: -85px;
+}
+.creditfacility {
+	width: 100%;
+}	
+	
+.loanadda-creditscore {
+	padding: 15px;
+	max-height: 220px;
+	height: 158px;
+	margin: 90px 0 0;
+}
+.credit-score{text-align:center; padding-bottom:20px}	
+
+.credit-score h2{font-size:25px}
+
+.loanadda-app-btnb1{
+	font-size:18px}		
+.testimoal-comment{
+	padding:0 20px}	
+
+
+/*---------loanadda mobile credit score classes--------------*/
+
+
+
+.loanadda-creditscore-facility{padding: 11px 0px;}
+
+.credit-form{background: rgba(225,225,225,.7);}
+.creditscore-work{margin-top:0px;padding:30px 0}
+.creditscore-work h1{font-size:30px}
+.creditscore-process img {
+	width: 133px;
+	margin-top: -85px;
+}
+.creditfacility {
+	width: 100%;
+}	
+	
+.loanadda-creditscore {
+	padding: 15px;
+	max-height: 220px;
+	height: 198px;
+	margin: 90px 0 0;
+}
+.credit-score{text-align:center; padding-bottom:20px}	
+
+.credit-score h2{font-size:25px}
+
+.loanadda-app-btnb1{
+	font-size:18px}		
+.testimoal-user{
+	padding:0 5px}
+.testimoal-comment{
+	padding:0 5px}		
+.credit-testimonial{padding:7px}
+
+.mobile-screen-form{
+	width:100%!important}
+.progress-text {
+    font-size: small;
+	}	
+.cfl-form-row{
+	display:block!important}
+.cfl-form-col {
+	flex: 1;
+	margin:  0px!important;
+}
+
+.checkmark-cre {
+    width: 84%;
+}
+
+.checkedbtn-cre{
+    width: 84%;}
+
+	}	
+	
+@media only screen and (max-width:320px){
+
+.web-heading-bl h3 {
+	font-size: 18px !important;
+}	
+
+.breadcrubs h2 {
+    font-size: 19px;
+	padding-top: 5px;
+}
+
+.loanadda-app-btnb1 {
+	padding:10px 14px;
+    font-size: 15px;
+
+}
+	
+	/*---------loanadda mobile home page classes--------------*/	
+	
+.slider-caption {
+    left: 35%;
+	top: 7%;
+}
+
+.slider h2 {
+	font-size: 15px;
+	line-height: 4px;
+}
+
+.slider p {
+	font-size: 11px;
+	line-height: 17px;
+}
+.loan-steps-process {
+	padding: 30px 10px 40px 71px;
+}
+.loan-process img {
+    margin-bottom: -6px;
+    width: 50%;
+}
+
+.loan-process1 img {
+    margin-bottom: -6px;
+    width: 30%;
+}
+
+.loanadda-app {
+	width: 94%;
+	margin-top: 20px;
+}
+
+.news-report img {
+	height: 62px;
+}
+
+.processimg {
+    margin-left: 53px;
+}
+	
+.loanadda-newsletter {
+	padding: 16px 20px;
+}
+.newsletter-submit {
+	padding: 14px 16px;
+}	
+
+.checkmark {
+	width: 80%;
+}
+
+.checkedbtn {
+    width: 80%;
+}
+
+.loanadda-loan-form {
+    margin-top: 80%;
+}
+.chart {
+	left: 82%;
+	top: 0%;
+}
+.pie-apply-btn {
+	text-align: center;
+	/* top: 95%; */
+	margin-top: 114%;
+	margin-bottom: 0px;
+	/* font-size: 11px !important; */
+	margin-left: -19px;
+}
+
+.checkmark-cre {
+    width: 82%;
+}
+
+.checkedbtn-cre{
+    width: 82%;}		
+	
+}
+	
+
+/*---------loanadda iphone 6/7/8 media query--------------*/
+
+	
